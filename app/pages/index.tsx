@@ -1,3 +1,4 @@
+
 const IndexPage = () => (
     <div className="center">
         <h1>Intron</h1>
