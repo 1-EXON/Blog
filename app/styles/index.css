@@ -1,20 +1,129 @@
 @import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 
+html {
+    --bg-color: #D8DEE9;
+    --text-color: #2E3440;
+    --menu-color: #ECEFF4;
+    --sm-color: #E5E9F0;
+    --logo-img: url('https://raw.githubusercontent.com/1-EXON/Design/main/blog/images/logo2.png')
+}
+
+html.dark {
+    --bg-color: #181818;
+    --text-color: #D8DEE9;
+    --menu-color: #141414;
+    --sm-color: #202020;
+    --logo-img: url('https://raw.githubusercontent.com/1-EXON/Design/main/blog/images/logo1.png')
+}
+
 body {
-    background-color: #D8DEE9;
-    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Noto Sans KR', sans-serif !important;
 }
 
-.center {
-    margin-top: 10em;
-}
-
-h1 {
-    font-size: 4em;
-}
-
-b {
+.side .group {
     font-weight: bolder;
+    font-size: small;
+    color: var(--text-color);
+    padding-top: 30px;
+}
+
+a:link { color: var(--text-color); text-decoration: none; }
+a:visited { color: var(--text-color); text-decoration: none; }
+a:hover { color: var(--text-color); text-decoration: none; }
+a:active { color: var(--text-color); text-decoration: none; }
+
+.main {
+    margin-left: 30%;
+    margin-top: 200px;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    position: fixed; 
+    z-index: 2; 
+    top: 0; 
+    left: 0;
+    background-color: var(--menu-color);
+    overflow-y: hidden;
+    overflow-x: hidden; 
+    padding-bottom: 10px;
+}
+
+.menu a {
+    font-size: large;
+    color: var(--text-color);
+    padding-left: 5em;
+}
+
+.menu button {
+    float: right;
+    background: url("https://raw.githubusercontent.com/1-EXON/Design/main/blog/images/dark.png");
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    outline: none;
+    border: none;
+}
+
+.menu img {
+    padding-left: 2em;
+    vertical-align: middle;
+}
+
+.side {
+    height: 100%;
+    width: 20%;
+    position: fixed; 
+    z-index: 1; 
+    top: 50px; 
+    left: 0;
+    background-color: var(--sm-color);
+    overflow-x: hidden; 
+    padding-top: 30px;
+    padding-left: 2em;
+}
+
+.side p {
+    font-size: medium;
+    color: var(--text-color);
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.content {
+    padding-top: 10px;
+}
+
+.card {
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: var(--sm-color);
+    width: 15em;
+    height: 20em;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+.card .card-title {
+    font-size: larger;
+    color: var(--text-color);
+    padding-top: 20px;
+}
+
+.card .card-content {
+    font-size: medium;
+    color: var(--text-color);
+    padding-top: 10px;
 }
