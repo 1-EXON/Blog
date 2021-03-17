@@ -1,8 +1,7 @@
-
 const IndexPage = () => (
     <div className="center">
-        <h1>Intron</h1>
-        <p>엑슨의 블로그</p>
+        <b><h1>Intron</h1></b>
+        <b><p>엑슨의 블로그</p></b>
     </div>
 )
 
